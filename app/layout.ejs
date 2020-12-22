@@ -7,24 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
 
-  <%- contents %>
+  <div class="container">
+    <div class="d-flex">
+      <%- include('menu'); %>
+      <%- contents %>
+    </div>
+  </div>
   <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/bootstrap/index.js"></script>
-  <script src="./assets/js/bootstrap/util.js"></script>
-  <script src="./assets/js/bootstrap/modal.js"></script>
+  <!-- <script src="./assets/js/bootstrap/index.js"></script> -->
+  <!-- <script src="./assets/js/bootstrap/util.js"></script> -->
+  <!-- <script src="./assets/js/bootstrap/modal.js"></script> -->
   <script src="./assets/js/all.js"></script>
-  <script>
-    $('#exampleModal').on('shown.bs.modal', function () {
-      // $('#myInput').trigger('focus')
-    })
-  </script>
 </body>
 
 </html>

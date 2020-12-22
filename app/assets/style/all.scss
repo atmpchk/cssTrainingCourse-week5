@@ -1,4 +1,9 @@
-@import "./helpers/variables";
 @import "./bootstrap/bootstrap";
 @import "base";
-@import "typography"
+@import "typography";
+
+// layout
+@import "layout/menu";
+
+// Pages
+@import "pages/admin";

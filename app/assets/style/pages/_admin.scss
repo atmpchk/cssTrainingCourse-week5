@@ -1,0 +1,27 @@
+table {
+
+  margin-bottom: 4rem;
+  th {
+    border-bottom: 1px solid $dark;
+  }
+  tr {
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+  td {
+    padding-top: 17px;
+    padding-bottom: 19px;
+    border-bottom: 1px solid $light;
+  }
+}
+
+.pagination {
+  .page-link {
+    line-height: 2rem;
+    i {
+      display: block;
+      line-height: 2rem;
+    }
+  }
+}
