@@ -1,5 +1,4 @@
 .menu {
-  padding: 2rem;
   width: 18.5rem;
   .logo {
     a {
@@ -22,6 +21,9 @@
   .nav-link {
     &.active {
       border-left: 4px solid $primary;
+    }
+    &:hover {
+      background: $light;
     }
   }
 }

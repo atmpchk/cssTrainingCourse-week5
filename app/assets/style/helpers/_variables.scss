@@ -114,7 +114,8 @@ $yiq-text-light:            $white !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                                true !default;
-$enable-rounded:                              true !default;
+// $enable-rounded:                              true !default;
+$enable-rounded:                              false !default;
 $enable-shadows:                              false !default;
 $enable-gradients:                            false !default;
 $enable-transitions:                          true !default;
@@ -137,11 +138,14 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: ($spacer * .25),   // 4
+    2: ($spacer * .5),    // 8
+    3: $spacer,           // 16
+    4: ($spacer * 1.5),   // 24
+    5: ($spacer * 2),     // 32
+    6: ($spacer * 2.5),   // 40
+    7: ($spacer * 3),     // 48
+    8: ($spacer * 3.75)   // 60
   ),
   $spacers
 );
@@ -246,8 +250,7 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-// $border-radius:               .25rem !default;
-$border-radius:               0 !default;
+$border-radius:               .25rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
 
@@ -777,14 +780,18 @@ $pagination-line-height:            1.25 !default;
 $pagination-color:                  $link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
-$pagination-border-color:           $gray-300 !default;
+// $pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           $primary !default;
 
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+// $pagination-hover-color:            $link-hover-color !default;
+$pagination-hover-color:            $white !default;
+// $pagination-hover-bg:               $gray-200 !default;
+$pagination-hover-bg:               lighten($primary, 2%) !default;
+// $pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-border-color:     lighten($primary, 2%) !default;
 
 $pagination-active-color:           $component-active-color !default;
 $pagination-active-bg:              $component-active-bg !default;
