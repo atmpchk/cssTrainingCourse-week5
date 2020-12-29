@@ -10,6 +10,10 @@ body {
   font-size: 1rem !important;
 }
 
+.text-lg {
+  font-size: 1.5rem !important;
+}
+
 .nav-link {
   &.active {
     color: $primary;
