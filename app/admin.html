@@ -5,188 +5,186 @@ engine: ejs
 current: admin
 ---
 
-<main class="p-8">
-  <header class="d-flex justify-content-between align-items-center mb-12">
-    <div class="d-flex align-items-end">
-      <h2 class="mr-12 mb-0 text-lg">Admin</h4>
-      <a href="#" class="font-weight-bold">
-        <i class="material-icons text-primary align-top mr-2">add</i>
-        Add New Admin
+<header class="d-flex justify-content-between align-items-center mb-12">
+  <div class="d-flex align-items-end">
+    <h2 class="mr-12 mb-0 text-lg">Admin</h4>
+    <a href="#" class="font-weight-bold">
+      <i class="material-icons text-primary align-top mr-2">add</i>
+      Add New Admin
+    </a>
+  </div>
+  <div class="d-flex align-items-center">
+    <a href="#">
+      <i class="material-icons align-top mr-6">search</i>
+    </a>
+    <a href="#">
+      <i class="material-icons align-top">notifications_active</i>
+    </a>
+  </div>
+</header>
+<table>
+  <tr>
+    <th class="id">
+      ID
+      <a href="#" class="d-inline-block ml-1">
+        <i class="material-icons text-md text-primary align-text-top">arrow_downward</i>
       </a>
-    </div>
-    <div class="d-flex align-items-center">
+    </th>
+    <th class="name">Name</th>
+    <th class="email">Email</th>
+    <th class="email">Verified</th>
+    <th class="operation"></th>
+  </tr>
+  <tr data-toggle="modal" data-target="#viewAdmin">
+    <td>#1</td>
+    <td>Emir Wicks</td>
+    <td>emir.wicks@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6" data-toggle="modal" data-target="#viewAdmin">
+        <i class="material-icons">remove_red_eye</i>
+      </a>
       <a href="#">
-        <i class="material-icons align-top mr-6">search</i>
+        <i class="material-icons">edit</i>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>#2</td>
+    <td>Zaina Goldsmith</td>
+    <td>zaina.goldsmith@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6">
+        <i class="material-icons">remove_red_eye</i>
       </a>
       <a href="#">
-        <i class="material-icons align-top">notifications_active</i>
+        <i class="material-icons">edit</i>
       </a>
-    </div>
-  </header>
-  <table>
-    <tr>
-      <th class="id">
-        ID
-        <a href="#" class="d-inline-block ml-1">
-          <i class="material-icons text-md text-primary align-text-top">arrow_downward</i>
-        </a>
-      </th>
-      <th class="name">Name</th>
-      <th class="email">Email</th>
-      <th class="email">Verified</th>
-      <th class="operation"></th>
-    </tr>
-    <tr data-toggle="modal" data-target="#viewAdmin">
-      <td>#1</td>
-      <td>Emir Wicks</td>
-      <td>emir.wicks@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6" data-toggle="modal" data-target="#viewAdmin">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>#2</td>
-      <td>Zaina Goldsmith</td>
-      <td>zaina.goldsmith@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>#3</td>
-      <td>Mahima Lopez</td>
-      <td>mahima.lopez@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>#4</td>
-      <td>Mahima Lopez</td>
-      <td>mahima.lopez@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>#5</td>
-      <td>Annika Mcbride</td>
-      <td>annika.mcbride@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>#6</td>
-      <td>Fatimah Clark</td>
-      <td>fatimah.clark@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>#7</td>
-      <td>Klaudia Rhodes</td>
-      <td>klaudia.rhodes@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>#8</td>
-      <td>Tillie Lucero</td>
-      <td>tillie.lucero@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>#9</td>
-      <td>Sabrina Stephenson</td>
-      <td>sabrina.stephenson@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>#10</td>
-      <td>Annie Smith</td>
-      <td>annie.smith@mail.com</td>
-      <td>Yes</td>
-      <td class="text-right">
-        <a href="#" class="mr-6">
-          <i class="material-icons">remove_red_eye</i>
-        </a>
-        <a href="#">
-          <i class="material-icons">edit</i>
-        </a>
-      </td>
-    </tr>
-  </table>
+    </td>
+  </tr>
+  <tr>
+    <td>#3</td>
+    <td>Mahima Lopez</td>
+    <td>mahima.lopez@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6">
+        <i class="material-icons">remove_red_eye</i>
+      </a>
+      <a href="#">
+        <i class="material-icons">edit</i>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>#4</td>
+    <td>Mahima Lopez</td>
+    <td>mahima.lopez@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6">
+        <i class="material-icons">remove_red_eye</i>
+      </a>
+      <a href="#">
+        <i class="material-icons">edit</i>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>#5</td>
+    <td>Annika Mcbride</td>
+    <td>annika.mcbride@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6">
+        <i class="material-icons">remove_red_eye</i>
+      </a>
+      <a href="#">
+        <i class="material-icons">edit</i>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>#6</td>
+    <td>Fatimah Clark</td>
+    <td>fatimah.clark@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6">
+        <i class="material-icons">remove_red_eye</i>
+      </a>
+      <a href="#">
+        <i class="material-icons">edit</i>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>#7</td>
+    <td>Klaudia Rhodes</td>
+    <td>klaudia.rhodes@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6">
+        <i class="material-icons">remove_red_eye</i>
+      </a>
+      <a href="#">
+        <i class="material-icons">edit</i>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>#8</td>
+    <td>Tillie Lucero</td>
+    <td>tillie.lucero@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6">
+        <i class="material-icons">remove_red_eye</i>
+      </a>
+      <a href="#">
+        <i class="material-icons">edit</i>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>#9</td>
+    <td>Sabrina Stephenson</td>
+    <td>sabrina.stephenson@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6">
+        <i class="material-icons">remove_red_eye</i>
+      </a>
+      <a href="#">
+        <i class="material-icons">edit</i>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>#10</td>
+    <td>Annie Smith</td>
+    <td>annie.smith@mail.com</td>
+    <td>Yes</td>
+    <td class="text-right">
+      <a href="#" class="mr-6">
+        <i class="material-icons">remove_red_eye</i>
+      </a>
+      <a href="#">
+        <i class="material-icons">edit</i>
+      </a>
+    </td>
+  </tr>
+</table>
 
-  <footer>
-    <nav aria-label="Page navigation" class="float-right">
-      <ul class="pagination mb-0">
-        <li class="page-item"><a class="page-link text-primary px-1" href="#"><i class="material-icons d-block">chevron_left</i></a></li>
-        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link text-primary px-1" href="#"><i class="material-icons d-block">chevron_right</i></a></li>
-      </ul>
-    </nav>
-  </footer>
-</main>
+<footer>
+  <nav aria-label="Page navigation" class="float-right">
+    <ul class="pagination mb-0">
+      <li class="page-item"><a class="page-link text-primary px-1" href="#"><i class="material-icons d-block">chevron_left</i></a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link text-primary px-1" href="#"><i class="material-icons d-block">chevron_right</i></a></li>
+    </ul>
+  </nav>
+</footer>
